@@ -89,7 +89,7 @@ export const Greeting = function() {
 
     }
 
-    this.element.text.innerHTML = value;
+    this.element.text.textContent = value;
 
   };
 

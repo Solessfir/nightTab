@@ -417,7 +417,6 @@ headerSetting.alignment = (parent) => {
   });
 
   headerSetting.alignment.alignmentHelper = new Control_helperText({
-    complexText: true,
     text: [message.get('menuContentHeaderAlignmentHelperPara1')]
   });
 

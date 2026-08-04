@@ -4,7 +4,6 @@ import './index.css';
 
 export const helper = function ({
   text = 'Text',
-  complexText = false,
   classList = []
 } = {}) {
 
@@ -12,9 +11,9 @@ export const helper = function ({
 
   if (text) {
 
-    if (complexText) {
+    if (text instanceof HTMLElement) {
 
-      helper.innerHTML = text;
+      helper.appendChild(text);
 
     } else {
 

@@ -108,7 +108,7 @@ export const Transitional = function () {
 
     }
 
-    this.element.text.innerHTML = value;
+    this.element.text.textContent = value;
 
   };
 

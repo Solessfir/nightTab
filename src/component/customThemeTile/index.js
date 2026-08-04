@@ -479,7 +479,7 @@ export const CustomThemeTile = function({
 
     if (isValidString(customThemeData.theme.name)) {
 
-      this.element.name.innerHTML = customThemeData.theme.name;
+      this.element.name.textContent = customThemeData.theme.name;
 
       this.element.custom.button.appendChild(this.element.name);
 

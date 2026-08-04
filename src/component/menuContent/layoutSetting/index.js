@@ -208,7 +208,6 @@ layoutSetting.area = (parent) => {
       text: [message.get('menuContentLayoutAreaHeaderJustifyHelper1Para1')]
     }),
     justifyHelper2: new Control_helperText({
-      complexText: true,
       text: [message.get('menuContentLayoutAreaHeaderJustifyHelper2Para1')]
     })
   };
@@ -255,7 +254,6 @@ layoutSetting.area = (parent) => {
       text: [message.get('menuContentLayoutAreaBookmarkJustifyHelper1Para1')]
     }),
     justifyHelper2: new Control_helperText({
-      complexText: true,
       text: [message.get('menuContentLayoutAreaBookmarkJustifyHelper2Para1')]
     })
   };

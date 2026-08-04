@@ -1,8 +1,7 @@
 import * as form from '../../form';
 
 export const Control_helperText = function ({
-  text = [],
-  complexText = false
+  text = []
 } = {}) {
 
   this.para = [];
@@ -10,8 +9,7 @@ export const Control_helperText = function ({
   text.forEach((item) => {
     this.para.push(form.helper({
       tag: 'p',
-      text: item || 'Text',
-      complexText: complexText
+      text: item || 'Text'
     }));
   });
 

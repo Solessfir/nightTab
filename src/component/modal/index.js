@@ -278,7 +278,7 @@ export const Modal = function ({
         headingString = trimString(headingString.substring(0, maxHeadingLength)) + '...';
       }
 
-      this.element.heading.text.innerHTML = headingString;
+      this.element.heading.text.textContent = headingString;
 
       this.element.heading.heading.appendChild(this.element.heading.text);
 

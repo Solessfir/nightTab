@@ -220,19 +220,19 @@ export const Clock = function () {
     this.now = moment();
 
     if (state.get.current().header.clock.hour.show) {
-      this.element.hour.innerHTML = this.string.hour();
+      this.element.hour.textContent = this.string.hour();
     }
 
     if (state.get.current().header.clock.minute.show) {
-      this.element.minute.innerHTML = this.string.minute();
+      this.element.minute.textContent = this.string.minute();
     }
 
     if (state.get.current().header.clock.second.show) {
-      this.element.second.innerHTML = this.string.second();
+      this.element.second.textContent = this.string.second();
     }
 
     if (!state.get.current().header.clock.hour24.show && state.get.current().header.clock.meridiem.show) {
-      this.element.meridiem.innerHTML = this.string.meridiem();
+      this.element.meridiem.textContent = this.string.meridiem();
     }
 
   };

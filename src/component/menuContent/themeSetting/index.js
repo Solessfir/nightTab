@@ -749,10 +749,9 @@ themeSetting.font = (parent) => {
       }
     }),
     nameHelper: new Control_helperText({
-      complexText: true,
       text: [
         message.get('menuContentThemeFontDisplayNameHelperPara1'),
-        (new Link({ text: message.get('menuContentThemeFontDisplayNameHelperLink'), href: 'https://fonts.google.com/', openNew: true })).link().outerHTML,
+        (new Link({ text: message.get('menuContentThemeFontDisplayNameHelperLink'), href: 'https://fonts.google.com/', openNew: true })).link(),
         message.get('menuContentThemeFontDisplayNameHelperPara2'),
         message.get('menuContentThemeFontDisplayNameHelperPara3')
       ]
@@ -837,10 +836,9 @@ themeSetting.font = (parent) => {
       }
     }),
     nameHelper: new Control_helperText({
-      complexText: true,
       text: [
         message.get('menuContentThemeFontUiNameHelperPara1'),
-        (new Link({ text: message.get('menuContentThemeFontUiNameHelperLink'), href: 'https://fonts.google.com/', openNew: true })).link().outerHTML,
+        (new Link({ text: message.get('menuContentThemeFontUiNameHelperLink'), href: 'https://fonts.google.com/', openNew: true })).link(),
         message.get('menuContentThemeFontUiNameHelperPara2'),
         message.get('menuContentThemeFontUiNameHelperPara3')
       ]

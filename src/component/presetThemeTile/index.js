@@ -389,7 +389,7 @@ export const PresetThemeTile = function ({
 
     if (isValidString(presetThemeData.name)) {
 
-      this.element.name.innerHTML = presetThemeData.name;
+      this.element.name.textContent = presetThemeData.name;
 
       this.element.preset.button.appendChild(this.element.name);
 

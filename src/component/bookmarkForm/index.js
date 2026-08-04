@@ -802,7 +802,7 @@ export const BookmarkForm = function({
           children: [
             node('div|class:bookmark-form-description', [
               node(`h2:${message.get('bookmarkFormSectionAddressHeading') || 'Content'}`),
-              complexNode({ tag: 'p', text: message.get('bookmarkFormSectionAddressDescription') || 'Text', complexText: true })
+              complexNode({ tag: 'p', text: message.get('bookmarkFormSectionAddressDescription') || 'Text' })
             ])
           ]
         }),

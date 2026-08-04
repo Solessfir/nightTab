@@ -257,19 +257,19 @@ export const Date = function () {
     this.now = moment();
 
     if (state.get.current().header.date.day.show) {
-      this.element.day.innerHTML = this.string.day();
+      this.element.day.textContent = this.string.day();
     }
 
     if (state.get.current().header.date.date.show) {
-      this.element.dateOfMonth.innerHTML = this.string.dateOfMonth();
+      this.element.dateOfMonth.textContent = this.string.dateOfMonth();
     }
 
     if (state.get.current().header.date.month.show) {
-      this.element.month.innerHTML = this.string.month();
+      this.element.month.textContent = this.string.month();
     }
 
     if (state.get.current().header.date.year.show) {
-      this.element.year.innerHTML = this.string.year();
+      this.element.year.textContent = this.string.year();
     }
 
   };

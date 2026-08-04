@@ -24,7 +24,7 @@ export const node = (string, node) => {
   let element = document.createElement(tag);
 
   if (text && text != '') {
-    element.innerHTML = text;
+    element.appendChild(document.createTextNode(text));
   }
 
   let attributes = string.slice(string.indexOf('|') + 1, string.length).split(',');
@@ -74,11 +74,7 @@ export const node = (string, node) => {
 
           } else {
 
-            let div = document.createElement('div');
-
-            div.innerHTML = item;
-
-            element.appendChild(div.firstChild);
+            element.appendChild(document.createTextNode(item));
 
           }
 
@@ -92,11 +88,7 @@ export const node = (string, node) => {
 
         } else {
 
-          let div = document.createElement('div');
-
-          div.innerHTML = node;
-
-          element.appendChild(div.firstChild);
+          element.appendChild(document.createTextNode(node));
 
         }
 

@@ -301,7 +301,7 @@ export const GroupArea = function({
 
   this.assemble = () => {
 
-    this.element.name.text.innerHTML = groupData.group.name.text;
+    this.element.name.text.textContent = groupData.group.name.text;
 
     this.element.name.name.appendChild(this.element.name.text);
 
