@@ -11,6 +11,13 @@ const name = require('./src/locale/en_GB/messages.json').appName.message;
 
 module.exports = merge(common, {
   mode: 'production',
+  performance: {
+    // this is a browser extension loaded from local disk, not a website fetched
+    // over a network per page view, so webpack's 244 KiB web-performance default
+    // doesn't apply here. Budget set with headroom above actual current output.
+    maxAssetSize: 1572864,
+    maxEntrypointSize: 1572864
+  },
   optimization: {
     minimize: true,
     minimizer: [
