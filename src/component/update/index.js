@@ -627,6 +627,14 @@ update.mod['7.5.0'] = function(data) {
 
 };
 
+update.mod['7.6.1'] = function(data) {
+
+  data.state.theme.background.color.opacity = 100;
+
+  return data;
+
+};
+
 update.run = (data) => {
 
   // loop over all updates in mod.all object

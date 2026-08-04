@@ -89,7 +89,7 @@ state.default = {
     },
     background: {
       type: 'theme',
-      color: { hsl: { h: 221, s: 47, l: 17 }, rgb: { r: 23, g: 36, b: 64 } },
+      color: { hsl: { h: 221, s: 47, l: 17 }, rgb: { r: 23, g: 36, b: 64 }, opacity: 100 },
       gradient: {
         angle: 160,
         start: { hsl: { h: 206, s: 16, l: 40 }, rgb: { r: 86, g: 104, b: 118 } },
@@ -189,7 +189,8 @@ state.minMax = {
     background: {
       color: {
         hsl: { h: { min: 0, max: 359 }, s: { min: 0, max: 100 }, l: { min: 0, max: 100 } },
-        rgb: { r: { min: 0, max: 255 }, g: { min: 0, max: 255 }, b: { min: 0, max: 255 } }
+        rgb: { r: { min: 0, max: 255 }, g: { min: 0, max: 255 }, b: { min: 0, max: 255 } },
+        opacity: { min: 0, max: 100 }
       },
       gradient: {
         angle: { min: 0, max: 360 },

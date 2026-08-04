@@ -2,9 +2,14 @@
   "name": "__MSG_appName__",
   "short_name": "__MSG_appShortName__",
   "description": "__MSG_appDescription__",
-  "version": "7.6.0",
+  "version": "7.6.1",
   "manifest_version": 3,
   "default_locale": "en_GB",
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "{4da3bd74-c932-465c-bb09-85cde913d2b2}"
+    }
+  },
   "chrome_url_overrides": {
     "newtab": "index.html"
   },

@@ -253,7 +253,7 @@
 }
 
 .theme-background-type-color {
-  background-color: rgb(var(--theme-background-color));
+  background-color: rgba(var(--theme-background-color), calc(var(--theme-background-color-opacity) / 100));
 }
 
 .theme-background-type-gradient {

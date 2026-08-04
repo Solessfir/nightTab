@@ -100,6 +100,7 @@ themeSetting.disable = () => {
     case 'theme':
     case 'accent':
       themeSetting.control.background.color.disable();
+      themeSetting.control.background.colorOpacity.disable();
       themeSetting.control.background.gradient.angle.disable();
       themeSetting.control.background.gradient.start.disable();
       themeSetting.control.background.gradient.end.disable();
@@ -126,6 +127,7 @@ themeSetting.disable = () => {
     case 'color':
       themeSetting.control.background.color.enable();
       themeSetting.control.background.gradient.angle.disable();
+      themeSetting.control.background.colorOpacity.enable();
       themeSetting.control.background.gradient.start.disable();
       themeSetting.control.background.gradient.end.disable();
       themeSetting.control.background.image.url.disable();
@@ -152,6 +154,7 @@ themeSetting.disable = () => {
       themeSetting.control.background.color.disable();
       themeSetting.control.background.gradient.angle.enable();
       themeSetting.control.background.gradient.start.enable();
+      themeSetting.control.background.colorOpacity.disable();
       themeSetting.control.background.gradient.end.enable();
       themeSetting.control.background.image.url.disable();
       themeSetting.control.background.image.urlHelper.disable();
@@ -178,6 +181,7 @@ themeSetting.disable = () => {
       themeSetting.control.background.gradient.angle.disable();
       themeSetting.control.background.gradient.start.disable();
       themeSetting.control.background.gradient.end.disable();
+      themeSetting.control.background.colorOpacity.disable();
       themeSetting.control.background.image.url.enable();
       themeSetting.control.background.image.urlHelper.enable();
       themeSetting.control.background.image.blur.enable();
@@ -204,6 +208,7 @@ themeSetting.disable = () => {
       themeSetting.control.background.gradient.start.disable();
       themeSetting.control.background.gradient.end.disable();
       themeSetting.control.background.image.url.disable();
+      themeSetting.control.background.colorOpacity.disable();
       themeSetting.control.background.image.urlHelper.disable();
       themeSetting.control.background.image.blur.disable();
       themeSetting.control.background.image.grayscale.disable();
@@ -1284,6 +1289,23 @@ themeSetting.background = (parent) => {
         data.save();
       }
     }),
+    colorOpacity: new Control_slider({
+      object: state.get.current(),
+      path: 'theme.background.color.opacity',
+      id: 'theme-background-color-opacity',
+      labelText: message.get('menuContentThemeBackgroundColorOpacity'),
+      value: state.get.current().theme.background.color.opacity,
+      defaultValue: state.get.default().theme.background.color.opacity,
+      min: state.get.minMax().theme.background.color.opacity.min,
+      max: state.get.minMax().theme.background.color.opacity.max,
+      action: () => {
+        applyCSSVar([
+          'theme.background.color.opacity'
+        ]);
+        toolbar.current.update.style();
+        data.save();
+      }
+    }),
     gradient: {
       angle: new Control_slider({
         object: state.get.current(),
@@ -1639,7 +1661,8 @@ themeSetting.background = (parent) => {
   };
 
   const themeBackgroundColorArea = node('div', [
-    themeSetting.control.background.color.wrap()
+    themeSetting.control.background.color.wrap(),
+    themeSetting.control.background.colorOpacity.wrap()
   ]);
 
   const themeBackgroundGradientArea = node('div', [

@@ -72,7 +72,7 @@ html.is-theme-background-type-accent,
 
 html.is-theme-background-type-color,
 .is-theme-background-type-color body {
-  background-color: rgb(var(--theme-background-color));
+  background-color: rgba(var(--theme-background-color), calc(var(--theme-background-color-opacity) / 100));
 }
 
 .is-layout-alignment-top-left body {

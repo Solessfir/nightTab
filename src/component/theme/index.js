@@ -468,6 +468,7 @@ theme.init = () => {
     'theme.background.color.hsl.h',
     'theme.background.color.hsl.s',
     'theme.background.color.hsl.l',
+    'theme.background.color.opacity',
     'theme.background.image.blur',
     'theme.background.image.grayscale',
     'theme.background.image.scale',
