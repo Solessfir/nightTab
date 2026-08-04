@@ -12,6 +12,7 @@ permissions:
 jobs:
   build-and-sign:
     runs-on: ubuntu-latest
+    environment: nightTab
     steps:
       - name: Checkout
         uses: actions/checkout@v4
