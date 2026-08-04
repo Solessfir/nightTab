@@ -627,6 +627,10 @@
     "message": "Colore di sfondo",
     "description": "Label for background colour."
   },
+  "menuContentThemeBackgroundColorOpacity": {
+    "message": "Opacità del colore di sfondo",
+    "description": "Range for background colour opacity."
+  },
   "menuContentThemeBackgroundGradientAngle": {
     "message": "Angolo di sfumatura dello sfondo",
     "description": "Label for background gradient angle."

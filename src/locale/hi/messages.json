@@ -627,6 +627,10 @@
     "message": "पृष्ठभूमि का रंग",
     "description": "Label for background colour."
   },
+  "menuContentThemeBackgroundColorOpacity": {
+    "message": "पृष्ठभूमि रंग की अस्पष्टता",
+    "description": "Range for background colour opacity."
+  },
   "menuContentThemeBackgroundGradientAngle": {
     "message": "पृष्ठभूमि ढाल कोण",
     "description": "Label for background gradient angle."

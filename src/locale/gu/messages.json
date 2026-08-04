@@ -627,6 +627,10 @@
     "message": "પૃષ્ઠભૂમિ રંગ",
     "description": "Label for background colour."
   },
+  "menuContentThemeBackgroundColorOpacity": {
+    "message": "પૃષ્ઠભૂમિ રંગની અસ્પષ્ટતા",
+    "description": "Range for background colour opacity."
+  },
   "menuContentThemeBackgroundGradientAngle": {
     "message": "પૃષ્ઠભૂમિ ઢાળ કોણ",
     "description": "Label for background gradient angle."

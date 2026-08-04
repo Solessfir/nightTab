@@ -627,6 +627,10 @@
     "message": "Колір фону",
     "description": "Label for background colour."
   },
+  "menuContentThemeBackgroundColorOpacity": {
+    "message": "Непрозорість кольору фону",
+    "description": "Range for background colour opacity."
+  },
   "menuContentThemeBackgroundGradientAngle": {
     "message": "Кут градієнта фону",
     "description": "Label for background gradient angle."

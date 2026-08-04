@@ -627,6 +627,10 @@
     "message": "পটভূমির রঙ",
     "description": "Label for background colour."
   },
+  "menuContentThemeBackgroundColorOpacity": {
+    "message": "পটভূমির রঙের অস্বচ্ছতা",
+    "description": "Range for background colour opacity."
+  },
   "menuContentThemeBackgroundGradientAngle": {
     "message": "পটভূমি গ্রেডিয়েন্ট কোণ",
     "description": "Label for background gradient angle."

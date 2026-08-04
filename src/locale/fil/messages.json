@@ -627,6 +627,10 @@
     "message": "Kulay ng background",
     "description": "Label for background colour."
   },
+  "menuContentThemeBackgroundColorOpacity": {
+    "message": "Opacity ng kulay ng background",
+    "description": "Range for background colour opacity."
+  },
   "menuContentThemeBackgroundGradientAngle": {
     "message": "Anggulo ng gradient ng background",
     "description": "Label for background gradient angle."

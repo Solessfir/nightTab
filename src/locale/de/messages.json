@@ -627,6 +627,10 @@
     "message": "Hintergrundfarbe",
     "description": "Label for background colour."
   },
+  "menuContentThemeBackgroundColorOpacity": {
+    "message": "Hintergrundfarbe-Opazität",
+    "description": "Range for background colour opacity."
+  },
   "menuContentThemeBackgroundGradientAngle": {
     "message": "Hintergrundverlaufswinkel",
     "description": "Label for background gradient angle."
